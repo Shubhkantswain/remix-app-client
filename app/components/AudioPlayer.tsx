@@ -8,7 +8,7 @@ const AudioPlayer = () => {
         <>
             {/* Minimized Player - Hidden on md and larger screens */}
             <div
-                className="fixed bottom-[60px] left-1/2 -translate-x-1/2 w-[95%] max-w-3xl bg-zinc-800 rounded-2xl p-2 mb-2 cursor-pointer md:hidden"
+                className="fixed bottom-[60px] left-1/2 -translate-x-1/2 w-[95%] max-w-3xl bg-green-200 rounded-2xl p-2 mb-2 cursor-pointer md:hidden"
                 onClick={() => setShowDetails(true)}
             >
                 <div className="flex items-center justify-between">
