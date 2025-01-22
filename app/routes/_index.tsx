@@ -1,5 +1,5 @@
 import React from 'react'
-import AppleMusicLayout from '~/components/Mainlayout'
+import AppleMusicLayout from '~/components/layout'
 
 function _index() {
   return (
