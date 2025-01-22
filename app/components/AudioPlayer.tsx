@@ -8,14 +8,14 @@ const AudioPlayer = () => {
         <>
             {/* Minimized Player - Hidden on md and larger screens */}
             <div
-                className="fixed bottom-[60px] left-1/2 -translate-x-1/2 w-[95%] max-w-3xl bg-green-200 rounded-2xl p-2 mb-2 cursor-pointer md:hidden"
+                className="fixed bottom-[60px] left-1/2 -translate-x-1/2 w-[95%] max-w-3xl bg-[#ef4444] rounded-2xl p-2 mb-2 cursor-pointer md:hidden"
                 onClick={() => setShowDetails(true)}
             >
                 <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3 flex-1">
                         <div className="w-10 h-10 bg-zinc-700 rounded-md flex-shrink-0">
                             <img
-                                src="/path-to-your-image.jpg"
+                                src="https://yt3.googleusercontent.com/A8BAczcCszeBNer_o6wC3LnvY-Q6NC1z72ODLnBjOPctDnJZF6vuvgo7MDbRDmBwjzbGJUTfIA=s900-c-k-c0x00ffffff-no-rj"
                                 alt="Album art"
                                 className="w-full h-full rounded-md object-cover"
                             />
@@ -47,7 +47,7 @@ const AudioPlayer = () => {
                             </svg>
                         </button>
                         <button
-                            className="w-7 h-7 rounded-full flex items-center justify-center bg-transparent text-zinc-400 hover:text-white"
+                            className="w-7 h-7 rounded-full flex items-center justify-center bg-transparent text-white"
                             onClick={(e) => e.stopPropagation()}
                         >
                             <svg

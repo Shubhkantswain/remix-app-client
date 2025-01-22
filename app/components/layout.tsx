@@ -189,7 +189,7 @@ const AppleMusicLayout = ({ children }: { children: ReactNode }) => {
         </main>
 
         {/* Audio Player Bar - Mobile Only */}
-        {/* <AudioPlayer /> */}
+        <AudioPlayer />
 
         {/* Mobile Footer Navigation */}
         <MobileFooterNav />
