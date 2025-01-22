@@ -119,7 +119,7 @@ const PlaylistPage = () => {
         </div>
       </div>
      
-     <Footer/>
+     {/* <Footer/> */}
     </AppleMusicLayout>
   );
 };
