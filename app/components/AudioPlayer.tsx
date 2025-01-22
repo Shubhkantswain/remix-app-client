@@ -8,7 +8,7 @@ const AudioPlayer = () => {
         <>
             {/* Minimized Player - Hidden on md and larger screens */}
             <div
-                className="fixed bottom-[60px] left-1/2 -translate-x-1/2 w-[95%] max-w-3xl bg-[#ef4444] rounded-2xl p-2 mb-2 cursor-pointer md:hidden"
+                className="fixed bottom-[60px] left-1/2 -translate-x-1/2 w-[95%] max-w-3xl bg-[#17171a] rounded-2xl p-1.5 mb-2 cursor-pointer md:hidden"
                 onClick={() => setShowDetails(true)}
             >
                 <div className="flex items-center justify-between">
@@ -28,13 +28,13 @@ const AudioPlayer = () => {
 
                     <div className="flex items-center space-x-3 flex-shrink-0 mr-3">
                         <button
-                            className="w-7 h-7 rounded-full flex items-center justify-center bg-transparent"
+                            className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent"
                             onClick={(e) => e.stopPropagation()}
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
+                                width="20"
+                                height="20"
                                 viewBox="0 0 24 24"
                                 fill="white"
                                 stroke="currentColor"
@@ -47,13 +47,13 @@ const AudioPlayer = () => {
                             </svg>
                         </button>
                         <button
-                            className="w-7 h-7 rounded-full flex items-center justify-center bg-transparent text-white"
+                            className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent text-white"
                             onClick={(e) => e.stopPropagation()}
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
+                                width="20"
+                                height="20"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -68,16 +68,15 @@ const AudioPlayer = () => {
                     </div>
                 </div>
 
-                <div className="mt-1.5">
+                <div className="mt-1">
                     <div className="h-0.5 bg-zinc-600 rounded-full">
                         <div className="h-full w-1/3 bg-white rounded-full"></div>
                     </div>
                 </div>
             </div>
 
-
             {/* Full Screen Detail View - Hidden on md and larger screens */}
-          <NowPlaying showDetails={showDetails} setShowDetails={setShowDetails}/>
+            <NowPlaying showDetails={showDetails} setShowDetails={setShowDetails}/>
         </>
     );
 };
