@@ -10,7 +10,7 @@ const NowPlaying: React.FC<NowPlayingProps> = ({ showDetails, setShowDetails }) 
 
   return (
     <div
-      className={`fixed inset-0 bg-black overflow-y-auto transition-transform duration-300 ease-in-out z-50 md:hidden ${
+      className={`fixed inset-0 bg-black overflow-y-auto transition-transform duration-400 ease-in-out z-50 md:hidden ${
         showDetails ? 'translate-y-0' : 'translate-y-full'
       }`}
     >
